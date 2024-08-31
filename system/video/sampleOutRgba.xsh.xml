@@ -1,0 +1,49 @@
+<Qwadro>
+    <DrawTechnique>
+        <Pass>
+            <CullMode>BACK</CullMode>
+            <PrimitiveTopology>TRI_STRIP</PrimitiveTopology>
+            <VertexShader>../system/video/uvOutTristripQuad.vsh</VertexShader>
+            
+            <FillMode>SOLID</FillMode>
+            <DepthWriteEnabled></DepthWriteEnabled>
+            <FragmentShader>../system/video/sampleOutRgba2d.fsh</FragmentShader>
+        </Pass>
+        <Pass id='yFlipped'>
+            <CullMode>BACK</CullMode>
+            <PrimitiveTopology>TRI_STRIP</PrimitiveTopology>
+            <VertexShader>../system/video/uvOutTristripQuadInvY.vsh</VertexShader>
+            
+            <FillMode>SOLID</FillMode>
+            <DepthWriteEnabled></DepthWriteEnabled>
+            <FragmentShader>../system/video/sampleOutRgba2d.fsh</FragmentShader>
+        </Pass>
+        <Pass id='sampleOutRgba2dBrokenLens'>
+            <CullMode>BACK</CullMode>
+            <PrimitiveTopology>TRI_STRIP</PrimitiveTopology>
+            <VertexShader>../system/video/uvOutTristripQuad.vsh</VertexShader>
+            
+            <FillMode>SOLID</FillMode>
+            <DepthWriteEnabled></DepthWriteEnabled>
+            <FragmentShader>../system/video/sampleOutRgba2dBrokenLens.fsh</FragmentShader>
+        </Pass>
+        <Pass id='sampleOutRgba2dStaticHi'>
+            <CullMode>BACK</CullMode>
+            <PrimitiveTopology>TRI_STRIP</PrimitiveTopology>
+            <VertexShader>../system/video/uvOutTristripQuad.vsh</VertexShader>
+            
+            <FillMode>SOLID</FillMode>
+            <DepthWriteEnabled></DepthWriteEnabled>
+            <FragmentShader>../system/video/sampleOutRgba2dStaticHi.fsh</FragmentShader>
+        </Pass>
+        <Pass id='sampleOutRgba2dStaticLo'>
+            <CullMode>BACK</CullMode>
+            <PrimitiveTopology>TRI_STRIP</PrimitiveTopology>
+            <VertexShader>../system/video/uvOutTristripQuad.vsh</VertexShader>
+            
+            <FillMode>SOLID</FillMode>
+            <DepthWriteEnabled></DepthWriteEnabled>
+            <FragmentShader>../system/video/sampleOutRgba2dStaticLo.fsh</FragmentShader>
+        </Pass>
+    </DrawTechnique>
+</Qwadro>

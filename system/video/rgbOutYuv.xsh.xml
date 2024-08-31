@@ -1,0 +1,24 @@
+<Qwadro>
+    <DrawTechnique>
+        <Pass>
+            <CullMode>BACK</CullMode>
+            <PrimitiveTopology>TRI_STRIP</PrimitiveTopology>
+            <VertexShader>../system/video/uvOutTristripQuad.vsh</VertexShader>
+            
+            <FillMode>SOLID</FillMode>
+            <DepthWriteEnabled></DepthWriteEnabled>
+            <FragmentShader>../system/video/rgbOutYuvSigma.fsh</FragmentShader>
+        </Pass>
+    </DrawTechnique>
+    <DrawTechnique  id='yFlipped'>
+        <Pass>
+            <CullMode>BACK</CullMode>
+            <PrimitiveTopology>TRI_STRIP</PrimitiveTopology>
+            <VertexShader>../system/video/uvOutTristripQuadInvY.vsh</VertexShader>
+            
+            <FillMode>SOLID</FillMode>
+            <DepthWriteEnabled></DepthWriteEnabled>
+            <FragmentShader>../system/video/rgbOutYuvSigma.fsh</FragmentShader>
+        </Pass>
+    </DrawTechnique>
+</Qwadro>
