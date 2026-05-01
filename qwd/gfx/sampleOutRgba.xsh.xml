@@ -1,0 +1,22 @@
+<DrawTechnique>
+    <Pass cullMode='BACK' topology='TRI_STRIP' fillMode='SOLID' >
+        <Shader stage='VERTEX' uri='//./z/gfx/uvOutTristripQuad.vsh' />
+        <Shader stage='FRAGMENT' uri='//./z/gfx/sampleOutRgba2d.fsh' />
+    </Pass>
+    <Pass id='yFlipped' cullMode='BACK' topology='TRI_STRIP' fillMode='SOLID' >
+        <Shader stage='VERTEX' uri='//./z/gfx/uvOutTristripQuadInvY.vsh'/>
+        <Shader stage='FRAGMENT' uri='//./z/gfx/sampleOutRgba2d.fsh'/>
+    </Pass>
+    <Pass id='sampleOutRgba2dBrokenLens' cullMode='BACK' topology='TRI_STRIP' fillMode='SOLID' >
+        <Shader stage='VERTEX' uri='//./z/gfx/uvOutTristripQuad.vsh'/>        
+        <Shader stage='FRAGMENT' uri='//./z/gfx/sampleOutRgba2dBrokenLens.fsh'/>
+    </Pass>
+    <Pass id='sampleOutRgba2dStaticHi' cullMode='BACK' topology='TRI_STRIP' fillMode='SOLID' >        
+        <Shader stage='VERTEX' uri='//./z/gfx/uvOutTristripQuad.vsh'/>
+        <Shader stage='FRAGMENT' uri='//./z/gfx/sampleOutRgba2dStaticHi.fsh'/>
+    </Pass>
+    <Pass id='sampleOutRgba2dStaticLo' cullMode='BACK' topology='TRI_STRIP' fillMode='SOLID'>        
+        <Shader stage='VERTEX' uri='//./z/gfx/uvOutTristripQuad.vsh'/>
+        <Shader stage='FRAGMENT' uri='//./z/gfx/sampleOutRgba2dStaticLo.fsh'/>
+    </Pass>
+</DrawTechnique>
