@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="binq">
+      <UniqueIdentifier>{df0c69b9-cdba-493f-a126-bf5a6342e096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_nfo">
+      <UniqueIdentifier>{248d16b4-bd96-475a-9b1c-d846f6e700bb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\binq\afxBinkVideo.c">
+      <Filter>binq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\binq\afxBinkProxy.c">
+      <Filter>binq</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\binq\afxBinkVideo.h">
+      <Filter>binq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\binq\afxBinkProxy.h">
+      <Filter>binq</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>_nfo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="binq.rc">
+      <Filter>_nfo</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
